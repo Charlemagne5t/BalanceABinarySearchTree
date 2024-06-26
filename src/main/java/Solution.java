@@ -14,9 +14,7 @@ class Solution {
         if (l > r) {
             return null;
         }
-        if (l == r) {
-            return list.get(l);
-        }
+
         int mid = l + (r - l) / 2;
         TreeNode root = list.get(mid);
         root.left = build(l, mid - 1);
